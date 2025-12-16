@@ -87,17 +87,17 @@ export const testimonials = [
     {
         imgUrl: girlDp1,
         name: "Juanita Annita",
-        reviewText: "Exceptional quality and innovative design! Nike shoes offer unparalleled comfort and style, perfect for athletes and casual wearers alike. Reliable performance and trend-setting looks make them a must-have for any footwear collection."
+        reviewText: "Exceptional quality and innovative design! Nike shoes offer unparalleled comfort and style, perfect for athletes and casual wearers alike."
     },
     {
         imgUrl: manDp1,
         name: "John Kimati",
-        reviewText: "These Nike shoes redefine comfort and style. The cushioning is superb, and the design is eye-catching. Perfect for running or casual wear. Highly recommend!"
+        reviewText: "These Nike shoes redefine comfort and style. The cushioning is superb, and the design is eye-catching. Perfect for running or casual wear."
     },
     {
         imgUrl: girlDp2,
         name: "Alice Wairimu",
-        reviewText: "Excellent quality and durability. My new go-to sneakers for workouts and daily activities. The fit is perfect, and they look amazing. Worth every penny!"
+        reviewText: "Excellent quality and durability. My new go-to sneakers for workouts and daily activities. The fit is perfect, and they look amazing."
     }
 ]
 
