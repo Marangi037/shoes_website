@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+.footerContainer{
+    @apply flex flex-col lg:flex-row justify-start items-start lg:justify-center lg:items-center  w-full h-2/3 font-sans gap-4 py-2
+}
+
+
+.title{
+    background: linear-gradient(to right, #c72092, #6c14d0);
+    -webkit-text-fill-color: transparent;
+    @apply text-2xl bg-clip-text capitalize font-medium
+}
+
+.smallContainer a{
+    @apply text-sm font-extralight
+}
+
+.logoContainer{
+    @apply w-[200px] h-max flex justify-around items-center
+}
+.logo{
+    @apply w-[20px] h-[20px] bg-transparent
+}
+
+.input{
+    @apply w-[250px] lg:w-[200px] max-h-[40px] bg-gray-200 border-[#c72092] justify-center items-center flex p-4 rounded-xl outline-0 text-sm text-gray-500
+}
+
+.subscribeButton{
+    background: linear-gradient(to right, #c72092, #6c14d0);
+    @apply w-[250px] lg:w-[200px] h-[40px] rounded-3xl flex justify-center items-center font-medium text-white uppercase border-3 border-white
+}
+
+.footerHeading{
+    background: linear-gradient(to right, #c72092, #6c14d0);
+    -webkit-text-fill-color: transparent;
+    @apply bg-clip-text
+    
+}

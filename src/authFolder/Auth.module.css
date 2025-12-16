@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+/*Image container*/
+
+.shoeContainer{
+    @apply hidden lg:flex lg:min-w-[50vh] min-h-screen justify-center items-center
+}
+.logShoes{
+    @apply flex w-[40vw] h-[70vh]
+}
+
+/* Sign container */
+.signContainer{
+    @apply relative min-w-screen min-h-screen flex justify-center items-center lg:min-w-[60vh] overflow-hidden gap-5 pl-[2em] md:px-[25em] lg:px-0
+}
+
+
+
+/*login container*/
+
+.login{
+    
+    @apply w-full h-[70%] pl-0 flex flex-col justify-around items-center gap-8 absolute translate-x-[-120%] lg:pl-[2em] px-0 text-sm
+}
+
+.loginHeader{
+    @apply font-[cursive] text-3xl 
+}
+.inputContainer{
+    @apply flex flex-col justify-center w-[74vw] md:w-[82vw] lg:w-[45vh]
+}
+.label{
+    @apply text-base font-extralight text-start pr-[3em] font-sans
+}
+
+.input{
+    @apply w-[70vw] h-[6vh] bg-gray-200 rounded-lg p-4 md:max-w-[80vh] lg:w-full font-sans
+}
+.loginButton{
+    background: linear-gradient(to right, #c72092, #6c14d0);
+    @apply w-[120px] h-[80px] min-h-[40px] rounded-lg flex justify-center items-center text-white uppercase font-medium duration-1000 transition-all border-2 border-white font-sans shadow-md shadow-[#c72092]
+}
+
+.loginButton:hover{
+    background: linear-gradient(to right, #9d056d, #3c037c);
+}
+
+.logoContainer{
+    @apply flex min-w-[60%] max-w-[70%] h-[20%] justify-around items-center
+}
+
+.logo{
+    @apply w-[30px] h-[30px] bg-transparent
+}
+
+/*sign up*/
+
+.signup{
+    @apply flex flex-col pl-0 w-full h-[75%] justify-around items-center gap-8 absolute lg:pl-[2em] text-sm
+}
+
+.signupHeader{
+    @apply font-[cursive] text-2xl
+}
+
+.signupButton{
+    background: linear-gradient(to right, #c72092, #6c14d0);
+    @apply w-[120px] h-[80px] min-h-[40px] rounded-lg text-white flex justify-center items-center font-medium uppercase border-2 border-white shadow-md shadow-[#c72092]
+}
+.signupButton:hover{
+    background: linear-gradient(to right, #9d056d, #3c037c);
+}
+
+.link{
+    @apply font-sans font-extralight text-base
+}
+
+.link:hover{
+    @apply text-[#c72092] duration-500 transition-all
+}
+
+.moveRight{
+    @apply animate-[moveRight_1s_ease-in-out_forwards]
+}
+
+.moveLeft{
+    @apply animate-[moveLeft_1s_ease-in-out_forwards]
+}
+
+@keyframes moveRight{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(120%);
+    }
+}
+
+@keyframes moveLeft{
+    from{
+        transform: translateX(120%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+} 

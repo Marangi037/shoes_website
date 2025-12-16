@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+.productsContainer{
+    @apply grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-4 gap-x-8 gap-y-8
+}
+
+.productCard{
+    @apply w-[150px] h-[250px] md:w-[250px] md:h-[350px] lg:w-[300px] flex flex-col justify-around items-center relative gap-2 py-2 px-3
+}
+
+.productImage{
+    @apply w-[70%]
+}
+
+.productImageDiv{
+    @apply rounded-md shadow-md relative bg-gray-300
+}
+.productTitle{
+    @apply text-sm font-extralight md:text-base text-black tracking-wide capitalize italic
+}
+
+.productDesc{
+    @apply text-xs text-wrap md:text-sm text-center font-extralight
+}
+
+
+.productButton{
+    background: linear-gradient(to right, #c72092, #6c14d0);
+    @apply w-[100px] lg:w-[130px] h-[40px] text-xs lg:text-sm text-white font-medium lg:font-bold uppercase text-nowrap rounded-md border-2 duration-1000 transition-all
+} 
+.productButton:hover{
+    background: linear-gradient(to right, #82075b, #3e077c);
+    transition: all;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+}

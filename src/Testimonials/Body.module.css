@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+.testimonialsContainer{
+    @apply max-w-screen min-h-[80vh] flex flex-col justify-around items-center mt-10 lg:mt-0
+}
+
+.symbolsContainer{
+    @apply w-full h-1/2 justify-center items-center hidden lg:flex gap-4
+}
+.symbol1{
+    clip-path: polygon(0% 50%, 100% 0%, 100% 100%, 0% 100%);
+    @apply w-[120px] h-[150px] bg-[#c72092] rotate-[180deg]
+}
+.symbol2{
+    clip-path: polygon(0% 50%, 100% 0%, 100% 100%, 0% 100%);
+    @apply w-[120px] h-[150px] bg-[#6c14d0] rotate-[180deg]
+}
+
+.testimonialContainer{
+    @apply w-full h-2/3 grid grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3 px-2
+}
+
+.testimonialCard{
+    @apply flex h-[250px] flex-col px-4 rounded-[15px] justify-center items-center bg-white relative shadow-md shadow-gray-300 gap-2 font-sans
+    
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+
+.outerCard{
+    background: conic-gradient(from var(--angle),transparent 70%, #c72092, #6c14d0);
+    @apply flex w-[240px] h-[260px] justify-center items-center relative rounded-[15px] p-[4px] animate-[rotate_3s_linear_infinite] lg:min-h-[200px] lg:min-w-[390px]
+    
+}
+.outerCard::before{
+    @apply w-full h-full absolute bg-blue-600
+}
+
+@keyframes rotate{
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+}
+
+
+.detailsContainer{
+    @apply flex justify-start items-center w-full gap-10
+}
+
+.image{
+    @apply w-[80px] h-[60px] rounded-[10px] border-none
+}
+
+.username{
+    @apply text-xs font-medium lg:text-base
+}
+
+.text{
+    @apply text-xs lg:text-sm font-extralight
+}

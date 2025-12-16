@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+
+.navbar{
+    box-shadow: 0 0 15px rgb(207, 203, 203);
+    @apply fixed top-0 left-0 right-0 w-full h-[70px] flex justify-between items-center px-[5%] bg-white z-10
+}
+
+
+.navHeader{
+    @apply text-[2.5em] font-bold text-[#c72092] relative
+}
+.navSpan{
+    @apply text-[#6c14d0] after:content-[""] after:w-[16%] after:h-[4px] after:bg-[#6c14d0] after:absolute after:rounded-sm after:bottom-1 after:left-[82%]
+}
+
+.navbarElements{
+    @apply hidden lg:flex justify-center items-center gap-4 font-medium uppercase cursor-pointer
+}
+.navbarElement{
+    background: linear-gradient(to left, #c72092, #6c14d0);
+    -webkit-text-fill-color: transparent;
+    @apply text-base tracking-wider transition-all bg-clip-text hover:animate-[colorChange_1s_ease-in-out_infinite] active:bg-[#5509ab]
+}
+
+@keyframes colorChange{
+    0%{
+        background: linear-gradient(#ca058c);
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    33.5%{
+        background: linear-gradient(toright, #5509ab #ca058c);
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    66.5%{
+        background: linear-gradient(#5509ab);
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    100%{
+         background: linear-gradient(to right #ca058c, #5509ab);
+         -webkit-text-fill-color: transparent;
+         background-clip: text;
+    }
+}
+
+.buttonContainer{
+    @apply w-[40px] h-[40px] relative flex justify-center items-center shadow-gray-500 shadow-sm rounded-sm z-4 lg:hidden
+}
+.hamburger{
+    @apply w-[30px] h-[4px] bg-black rounded-md before:w-[30px] before:content-[""] before:h-[4px] before:rounded-md before:absolute before:bg-black before:left-[5px] before:top-2 after:h-[4px] after:absolute after:bg-black after:bottom-2 after:left-[5px] after:content-[""] after:w-[30px]
+}
+.hamburgerOpen{
+    @apply w-[30px] h-[4px] bg-transparent rounded-md before:w-[30px] before:content-[""] before:h-[4px] before:rounded-md before:absolute before:bg-black before:left-[5px] before:top-2 before:rotate-45 before:translate-y-3 after:h-[4px] after:absolute after:bg-black after:bottom-2 after:left-[5px] after:content-[""] after:w-[30px] after:-rotate-45 after:-translate-y-2 
+}
+
+.openMenu{
+    @apply absolute top-0 bottom-0 left-0 right-0 bg-white flex flex-col min-w-screen min-h-screen justify-between 
+}
+
+
+
+.openMenuElements{
+    @apply flex flex-col w-full h-full justify-start items-center text-[3em]  gap-6 shadow-gray-400 shadow-sm text-sm pt-20
+}
+.openMenuElement{
+    @apply transition-all duration-500 hover:text-[#c72092] active:text-[#6c14d0] text-base
+}
+
+.openMenuText{
+    @apply text-base text-center font-normal w-full h-[40px] flex justify-center items-center flex-nowrap
+}

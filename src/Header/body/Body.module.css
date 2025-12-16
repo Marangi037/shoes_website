@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+
+.headerContainer{
+    @apply container min-w-screen min-h-screen flex flex-col lg:flex-row-reverse lg:px-20 justify-center items-center
+}
+
+.textContainer{
+    @apply flex flex-col justify-around items-center w-full h-[50vh] px-4 md:px-12 lg:max-h-[90vh] lg:min-h-[70vh] lg:w-1/2 lg:justify-center gap-7 lg:items-start
+}
+
+.textContainerHeader{
+    background: linear-gradient(to right, #c72092, #6c14d0);
+    -webkit-text-fill-color: transparent;
+    @apply text-3xl font-bold text-center bg-clip-text md:text-5xl lg:text-[5em] lg:font-bold lg:pr-20 lg:text-start tracking-wide
+}
+.textContainerDescription{
+    @apply text-sm md:text-base tracking-wider font-light font-sans leading-10
+}
+
+.textContainerButton{
+    background: linear-gradient(to right, #c72092, #6c14d0);
+    @apply rounded-[20px] w-[120px] h-[40px] min-h-[40px] flex justify-center items-center text-white text-sm lg:text-base tracking-wide  font-medium hover:animate-[colorChange_0.5s_ease-in-out_forwards] border-2 border-white shadow-md shadow-[#c72092]
+}
+
+@keyframes colorChange{
+    to{
+        background: linear-gradient(to left, #940d69, #4e099d);
+    }
+}
+
+.shoeContainer{
+    @apply flex justify-center items-end lg:items-center w-full h-[35vh] md:pt-12 lg:max-h-[90vh] lg:w-1/2
+}
+.shoeImage{
+    @apply max-w-[150px] md:max-w-[200px] lg:max-w-[500px]
+}

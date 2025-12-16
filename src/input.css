@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    @apply min-w-[400px] min-h-screen font-sans
+}
+
+
+.fullBody{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    @apply container m-0 p-0 box-border bg-white 
+}
+.header{
+    @apply min-w-screen h-[50%] flex flex-col justify-center items-center mb-[20%] md:mb-[10%] lg:mb-[5%]
+}
+
+.products{
+    @apply min-w-screen min-h-screen flex justify-between items-center px-3 flex-col gap-6 mb-[20%] md:mb-[10%] lg:mb-[5%]
+}
+
+
+.productsHeader{
+    background: linear-gradient(to right, #c72092, #6c14d0);
+    -webkit-text-fill-color: transparent;
+    @apply text-3xl bg-clip-text font-bold text-center uppercase text-nowrap  tracking-wide
+}
+
+.testimonials{
+    @apply min-h-screen min-w-screen flex justify-center items-center flex-col
+}
+
+.testimonialsHeader{
+    background: linear-gradient(to right, #c72092, #6c14d0);
+    -webkit-text-fill-color: transparent;
+    @apply text-4xl bg-clip-text font-medium uppercase font-sans
+}
+
+.about{
+    font-family: Arial, Helvetica, sans-serif;
+    @apply min-h-screen min-w-screen flex justify-center gap-4 items-center flex-col mt-10
+}
+.aboutHeader{
+    background: linear-gradient(to right, #c72092, #6c14d0);
+    -webkit-text-fill-color: transparent;
+    @apply text-4xl bg-clip-text uppercase font-medium
+}
+
+.services{
+    @apply min-h-screen min-w-screen flex flex-col justify-center items-center gap-[6em] px-4  lg:min-h-[60vh] lg:mt-0 lg:px-14 font-sans pt-6
+}
+
+.servicesHeader{
+    background: linear-gradient(to right, #c72092, #6c14d0);
+    -webkit-text-fill-color: transparent;
+    @apply bg-clip-text text-3xl uppercase font-bold tracking-wider
+}
+
+.servicesContainer{
+    @apply w-full h-full flex flex-col lg:flex-row justify-around items-center gap-6
+}
+
+.smallContainer{
+    @apply flex flex-col justify-center items-center h-1/3 gap-3 lg:max-w-[20vw] max-w-[80%]
+}
+.smallContainerHeader{
+    @apply text-2xl font-medium text-center
+}
+
+.text{
+    @apply text-sm lg:text-base text-center px-4 font-sans font-extralight
+}
+.smallContainer i{
+    @apply text-8xl text-[gold]
+}
+
+.auth{
+    background-image: url("./assets/image/loging_bg.png");
+    @apply min-h-screen min-w-screen flex justify-center items-center mt-[-5em] lg:justify-around lg:mt-0 bg-center bg-cover pt-6 
+}
+
+.footer{
+    box-shadow: 5px 0 10px rgb(189, 187, 187);
+    @apply h-full min-w-screen flex justify-center items-center lg:h-[40vh] bg-black pl-2 lg:pl-0
+}
